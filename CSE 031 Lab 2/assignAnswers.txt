@@ -1,0 +1,12 @@
+Assignment 1
+
+1. Line 25 caused the segmentation fault. “scanf("%d", input);”
+2. I fixed the line so it works properly by adding the “&” symbol. "scanf("%d", &input);"
+3. The bug here is that we could not print the final result correctly since the sum variable was not updated outside of the function.
+4. To fix it I used “*sum” to dereference the pointer to help modify the actual sum in the main function. I also passed the sum variable so any changes will show in main. 
+
+Assignment 2
+
+1. The output is not expected because it printed “HELLO!hello!.” instead of "HELLO!hello!" as intended. 
+2. The output is not expected. It printed “HI!hi!hello!.” instead of HI!hi!" This is because since we ran the program again it was going based on the previous string and not a new one. To fix it I put the "\0" terminator at s1[s1len+s2len] , this way it stopped the string correctly. 
+3. The output still is not expected. It printed “thank you! I am fine, thank you! .” I think this happened because the length of the string variable was capped at length10 so it messed it up. 

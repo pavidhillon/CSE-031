@@ -1,0 +1,48 @@
+Names: Valerie De Leon-Chavarria, Pavi Dhillon, Ella Drobenyuk, Bryanna Gonzalez, Anusha Jamsandekar
+
+Valerie’s Sources: 
+https://code.visualstudio.com/docs/cpp/cpp-debug
+https://ardupilot.org/dev/docs/debugging-with-gdb-using-vscode.html
+https://docs.lagerdata.com/tutorials/vscode.html 
+
+Pavi’s Sources:
+https://www.youtube.com/watch?v=v_C1cvo1biI 
+https://www.youtube.com/watch?v=2GV0K9Y2MKA
+https://www.youtube.com/watch?v=lEr3sTLih8U 
+
+Ella’s Sources:
+https://www.youtube.com/watch?v=u6iXfpBDU3w
+https://www.muchen.ca/documents/CPEN411/vscode-debug.html
+https://www.cs.swarthmore.edu/courses/cs35/f24/using_gdb_in_vscode/
+
+Bryanna’s Sources:
+https://www.youtube.com/watch?v=ld2NE7DO820
+https://code.visualstudio.com/docs/cpp/cpp-debug
+https://stackoverflow.com/questions/70245851/how-to-debug-in-vs-code-using-lldb
+
+Anusha’s Sources:
+https://lldb.llvm.org/resources/build.html
+https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/gdb_to_lldb_transition_guide/document/lldb-basics.html
+https://www.youtube.com/watch?v=r5HQqU_6siA 
+
+
+TPS 2
+
+Punishment.c can be debugged using LLDB by using the -g flag or clang. The command to run would be “gcc -g -o punish punishment.c”.
+Punish can be loaded in LLDB with command “lldb punish”.
+Punish can be run in LLDB by using the command “(lldb) run”.
+A breakpoint is the point in a program where the debugger no longer executes, pausing. To set up a breakpoint in general, use the command ““(lldb) breakpoint set --file (addfilename) --line (addline)”. To set up a breakpoint at the line where the for loop appears in punishment with LLDB, which is line 25, we run in the terminal “(lldb) breakpoint set --file punishment.c --line 25”.
+To run the program line by line after hitting the breakpoint, you can run the command “next” in the terminal to execute the next line of code over functions, or “step” to execute the next line into a function.
+To see the value of a variable while running line by line, the command “(lldb) print (variableName)” can be used, with adding the variable name itself. For example, “print typo”.
+To let the program finish running in LLDB, you use the “continue” command in the terminal.
+To exit from LLDB, we use the “quit” command.
+
+TPS 3
+We declared four variables: x, y, *px, and *py. *px and *py are integer pointers. 
+The values of x, y, and arr[0] are 0. This is because the variables have not been declared.
+To prevent them from having unexpected values, initialize them before use. int x=0, y=0, *px, *py; int arr[10] = {0};
+Use “%p” to print a pointer and the argument should be a pointer to void printf("%p\n",(void*)&x); printf(“%p\n”,(void*)&y);
+To have our pointers to point to our variables we must use “px = &x; py = &y;” To print out the addresses of our pointers, we must use “printf(“%p\n”,(void*)px); printf(“%p\n”,(void*)py);”
+for (int i=0;i<10;i++){ printf(“arr[%d] = %d\n”, i, *(arr+i)); }
+Yes they are, you can check using “printf(“arr: %p\n”, (void*)arr); printf(“&arr[0]: %p\n”, (void*)&arr[0]);”
+To print out the address of arr, we must use “printf(“%p\n”, (void*)&arr);”. The results concluded that the address of arr is the same as arr[0].

@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/pavu/CSE 031 Lab 2/punishment'
+relocations:     []
+...
