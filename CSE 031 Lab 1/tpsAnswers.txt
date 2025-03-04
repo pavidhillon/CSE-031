@@ -1,0 +1,61 @@
+TPS 1
+
+Names: Valerie De Leon-Chavarria, Pavi Dhillon, Ella Drobenyuk, Bryanna Gonzalez, Anusha Jamsandekar
+
+Valerie’s Sources: 
+https://ubuntu.com/tutorials/command-line-for-beginners#1-overview 
+https://learn.microsoft.com/en-us/training/modules/introduction-to-powershell/
+https://www.varonis.com/blog/windows-powershell-tutorials 
+
+Pavi’s Sources:
+https://www.youtube.com/watch?v=aKRYQsKR46I&pp=ygUoaG93IHRvIHVzZSBMaW51eC9NYWMvUG93ZXJTaGVsbCB0ZXJtaW5hbA%3D%3D
+https://www.youtube.com/watch?v=gd7BXuUQ91w&pp=ygUoaG93IHRvIHVzZSBMaW51eC9NYWMvUG93ZXJTaGVsbCB0ZXJtaW5hbA%3D%3D
+https://www.youtube.com/watch?v=FpRGRLI8Fy8&pp=ygUoaG93IHRvIHVzZSBMaW51eC9NYWMvUG93ZXJTaGVsbCB0ZXJtaW5hbA%3D%3D 
+
+Ella’s Sources:
+https://support.apple.com/guide/terminal/get-started-pht23b129fed/mac
+https://code.visualstudio.com/docs/setup/mac
+https://www.youtube.com/watch?v=ElJsKAKrY_k
+
+Bryanna’s Sources:
+https://opensource.com/article/21/8/linux-terminal
+https://macpaw.com/how-to/use-terminal-on-mac
+https://www.youtube.com/watch?v=FpRGRLI8Fy8
+
+Anusha’s Sources:
+https://www.youtube.com/watch?v=pgrK8y7tIYM
+https://support.apple.com/guide/terminal/execute-commands-and-run-tools-apdb66b5242-0d18-49fc-9c47-a2498b7c91d5/mac
+https://www.taniarascia.com/how-to-use-the-command-line-for-apple-macos-and-linux/ 
+
+TPS 2
+On windows, search for “Command Prompt” on the start taskbar and open the command prompt. On Mac, the Terminal can be opened by going into Applications, then Utilities, then Terminal. Spotlight Search with Cmd Space and typing in the terminal also works. Yes, you can open more than one terminal at the same time. A reason someone might want to open multiple terminals is to compare a command between each other, most likely the speed of the command or results.
+On Linux or Mac, you can find what the contents are with the command “ls”. In Windows, it will be “dir”.
+In the terminal, the command you would use to redirect your directory to “Desktop” is “cd ../Desktop”
+For mac / linux you open the terminal then navigate to the desktop by running “cd ~/Desktop” then you create the CSE31 directory by running “mkdir CSE31” then you verify it was created by “ls”. For windows you open the command prompt then go to desktop then create the directory and verify it was created by “dir”. For using file explorer or finder you go to your desktop then right click and select the new folder then name it. 
+
+TPS 3
+Sources
+
+Valerie: https://www.wikihow.com/Compile-a-C-Program-Using-the-GNU-Compiler-(GCC) , https://medium.com/@laura.derohan/compiling-c-files-with-gcc-step-by-step-8e78318052 
+
+Pavi: https://www.youtube.com/watch?v=LBwTUHRbfK0&pp=ygUyIGhvdyB0byB1c2UgR0NDIGluIGEgTGludXgvTWFjL1Bvd2VyU2hlbGwgdGVybWluYWw%3D & https://www.youtube.com/watch?v=hIZ7qsiXlic&pp=ygUyIGhvdyB0byB1c2UgR0NDIGluIGEgTGludXgvTWFjL1Bvd2VyU2hlbGwgdGVybWluYWw%3D 
+
+Ella:https://osxdaily.com/2023/05/02/how-install-gcc-mac/
+https://cs.millersville.edu/~gzoppetti/InstallingGccMac.html
+
+Bryanna: 
+https://www.geeksforgeeks.org/gcc-command-in-linux-with-examples/
+https://discussions.apple.com/thread/8336714?sortBy=rank
+
+Anusha:
+https://www.youtube.com/watch?v=FGSlg8L5kf0
+https://osxdaily.com/2023/05/02/how-install-gcc-mac/
+
+Sources in question 1
+The line “gcc main.c -o main” was used in the terminal to do so.
+Run the file that what we titled “main” by typing “./main” in the terminal.
+The -c flag compiles the source files into an abject file without linking it as executable.
+The -g flag is used to tell gcc to include debugging in the executable.
+To change it, you would do “gcc main.c -o cselab1” in the terminal.
+When typing gcc main.c, you will get an executable file called “a.out” meaning you can run and produce your result
+To run the main program, input “./main” into the terminal. After computing what was necessary within question 8, this would instead be “./a.out”.

@@ -1,0 +1,41 @@
+FUNCTION main():
+Declare value, avg_even, avg_odd, count_even, count_odd
+For int n starting 1, value !=0, increasing +1
+abs(value)
+
+	If n is 1
+		“Enter the 1st value: “ value
+	If n is 2
+		“Enter the 2nd value: ” value
+	If n is 3
+		“Enter the 3rd value: ” value
+Else
+“Enter the nth value: “ value
+
+
+//This section separates the integers to single numbers and adds them together
+Declare a temp variable that is the absolute value of the value
+Declare sum
+While temp is greater than 0
+	Sum is the sum value plus the remainder of the temp divided by 10
+	Temp becomes temp divided by 10
+
+//Check is the sum is even or odd value using an if statement that checks whether the remainder of sum divided by 2 is 0 or 1, 0 being even and 1 being odd
+	
+	If the remainder of sum divided by 2 is 0
+		avg_even is the avg_even plus the value
+		Count_even increases by +1
+	Else
+		Avg_odd is the avg_odd plus the value
+		Count_odd increases by +1
+
+//Calculate the average of the values
+Avg_even is avg_even divided by count_even
+Avg_odd is avg_odd divided by count_odd
+	
+If count_even plus count_odd is 0
+	“There is no average to compute”
+If count_even is not 0
+	“Average of input values whose digits sum up to an even number: “ avg_even
+If count_odd is not 0
+	“Average of input values whose digits sum up to an odd number: “ avg_odd
