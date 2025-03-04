@@ -1,0 +1,25 @@
+TPS 1
+
+Names: Valerie De Leon-Chavarria, Pavi Dhillon, Ella Drobenyuk, Bryanna Gonzalez, Anusha Jamsandekar
+
+The three pools for memory are called Stack, Heap, and Static storage. In their respectable order, 
+the variables that are stored are local variables, allocated variables, and global variables.
+
+
+Three variables are declared; num, ptr, and handle.
+Two are pointers, ptr points to an int while handle points to a pointer to an int.
+Num, ptr, and handle are stack memory since they are local variables, but in line 10 and 12, 
+ptr and handle are in heap memory indicated by “malloc.”
+I am assuming you meant line 11 “*ptr = num;”. The pointer will point to heap memory as it was 
+allocated to in line 10 using “malloc”.
+
+
+TPS 2
+
+Defines a structure of Node with three members, iValue, fValue, and next. Then allocates memory
+ of the node with the assigned values of iValue = 5 and fValue = 3.14.
+printf("Address of head (heap): %p\n", head); printf("Address of head: %p\n", &head); 
+printf("Address of iValue: %p, Value: %d\n", &head->iValue, head->iValue); printf("Address of fValue: %p, Value: %f\n", &head->fValue, head->fValue); printf("Address of next: %p, Value: %p\n", &head->next, head->next);
+The members of a structure are stored in order, but sometimes there are gaps between
+ them to make memory access faster. The pointer head holds the address of the Node structure so it can be used to access the data inside it.
+
